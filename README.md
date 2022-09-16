@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Dime Assessment Mockup - Daniel Geiger
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi! First I want to say thanks for giving me the opportunity to apply and take this assessment. I had a lot of fun with this mockup!
 
-## Available Scripts
+## Running the mockup
 
-In the project directory, you can run:
+The mockup is a npm package made using `create-react-app`. You should be able to clone the repo, install any ependencies and then enter `npm start`. This should bring up the interactive mockup.
 
-### `npm start`
+## Assumptions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In making the mockup, I had to make several assumptions that are worth pointing out.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The first was how to construct the mockup. The instructions didn't specify what tools and framework I was intended to use. I was having some issues with my dev environment trying to build with React Native. After talking with Dan, he said I could just use React, so that's what I used.
+- Next was the level of detail to include in the mockup. I wasn't sure if this was just a layout mockup or what functionality was intended. I decided to build any functionality I could reasonably infer from the image. However, I may have gotten some of the finer points wrong.
+  - The star ratings, review count, price, and sale price are all based on the props that are passed to the components. The saving percentage note is also conditionally rendered based on whether or not the item is on sale.
+  - The "Add to Bundle" buttons will add the cost of the item to the Bundle Price. I wasn't sure if the button should convert to a "Remove from Bundle" once the item was added or if it should remain unchanged so users can add multiple of the same item to their bundle. I opted for the second option.
+  - I also wasn't sure what bundle prices the user should reach to hit higher tiers on the savings percentage. Since they reach the 10% tier when they reach $100, I decided to go with the following associations: 15%: $150; 20%: $200; and 25%: $150. Modifying these would be easy.
+- I also wasn't sure if you wanted me to mock the layout of the header with all the system icons. I decided that would probably be outside of the scope the mockup.
 
-### `npm test`
+## Improvements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I unfortunately didn't have as much time to work on this mockup as I would have liked. As a result, there are several things I could have done to improved in the code, but opted not to do in the interest of time.
 
-### `npm run build`
+- Replace the less-than sign with an actual image for the page back button.
+- Further improve spacing and font selection to match the image more closely.
+- Improve design for scalability and better mobile-first design.
+- Improve the CSS through better organization and class name revisions
+- Implement the bar chart as a React component
+- Make the code more DRY in several spots through refactoring.
+- Make the code easier to navigate by implementing several helper functions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Conclusion
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks again for this opportunity. This has been a lot of fun and I hope to hear from you soon!
