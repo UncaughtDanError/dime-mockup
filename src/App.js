@@ -52,7 +52,7 @@ function App() {
         Add Product
       </header>
       <div className="main">
-        <ProductCard name="Creamy Foam Cleanser" handleClick={handleClick} stars={5} reviews={146} price={1} salePrice={null}/>
+        <ProductCard name="Creamy Foam Cleanser" handleClick={handleClick} stars={5} reviews={146} price={32} salePrice={null}/>
         <ProductCard name="Volume Mascara" handleClick={handleClick} stars={3.5} reviews={25} price={22} salePrice={null}/>
         <ProductCard name="Daily Refresh" handleClick={handleClick} stars={0} reviews={0} price={68} salePrice={65}/>
         <ProductCard name="Cleansing Balm" handleClick={handleClick} stars={4.7} reviews={184} price={38} salePrice={null}/>       
